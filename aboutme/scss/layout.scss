@@ -1,0 +1,100 @@
+@import "vars";
+@import "mixins";
+// @붙이면 가져올수 있다. (import할때는 제목의 언더바를 붙이지 않는다)
+
+body {
+  font-family: "Roboto", "Noto Sans KR", "돋움";
+  color: #111;
+  font-size: 18px;
+  // min-height: 3000px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//이미지는 글자처럼 처리된다.
+img {
+  vertical-align: top;
+  //이걸쓰면 이미지 위로 붙여 준다. 안쓰면 이미가 살짝 벌어짐
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.background {
+  //background-image: url("../images/main/background.jpg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 162, 200, 1) 0%,
+    rgba(92, 172, 206, 1) 26%,
+    rgba(0, 51, 79, 1) 50%,
+    rgba(207, 45, 113, 1) 75%,
+    rgba(230, 230, 250, 1) 94%
+  );
+  height: 100vh;
+  position: relative;
+  .box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .box-content {
+      width: 250px;
+      height: 250px;
+      box-sizing: border-box;
+      padding: 10px;
+      border: 10px solid #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      p {
+        line-height: 1.2;
+        font-size: 24px;
+        font-weight: 700;
+      }
+      h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+      }
+    }
+    .name {
+      width: 250px;
+      box-sizing: border-box;
+      padding: 10px;
+      margin-top: -1px;
+      background-color: #fff;
+      color: #111;
+      text-align: center;
+      h2 {
+        font-size: 36px;
+        font-weight: 900;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 700;
+      }
+    }
+  }
+}

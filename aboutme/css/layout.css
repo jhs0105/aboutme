@@ -1,0 +1,84 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", "Noto Sans KR", "돋움";
+  color: #111;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.background {
+  background: linear-gradient(90deg, rgb(200, 162, 200) 0%, rgb(92, 172, 206) 26%, rgb(0, 51, 79) 50%, rgb(207, 45, 113) 75%, rgb(230, 230, 250) 94%);
+  height: 100vh;
+  position: relative;
+}
+.background .box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.background .box a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.background .box .box-content {
+  width: 250px;
+  height: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 10px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.background .box .box-content p {
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 700;
+}
+.background .box .box-content h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+.background .box .name {
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: -1px;
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+}
+.background .box .name h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.background .box .name p {
+  font-size: 24px;
+  font-weight: 700;
+}

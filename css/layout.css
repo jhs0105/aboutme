@@ -1,0 +1,318 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", "Noto Sans KR", "돋움";
+  color: #111;
+  font-size: 18px;
+  background-color: #e6e6fa;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.background {
+  background: linear-gradient(90deg, rgb(0, 51, 79) 0%, rgb(207, 45, 113) 18%, rgb(92, 172, 206) 33%, rgb(200, 162, 200) 44%, rgb(230, 230, 250) 50%, rgb(51, 51, 51) 50%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.background .container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.background .container > a:hover + .circle-txt {
+  opacity: 1;
+}
+.background .container .box-content {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 10px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.background .container .box-content p {
+  line-height: 1.25;
+  opacity: 0.5;
+}
+.background .container .box-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+}
+.background .container .box-content.grey-box {
+  background-color: #333;
+  color: #fff;
+}
+.background .container .box-content.color-box {
+  background: linear-gradient(90deg, rgb(207, 45, 113) 0%, rgb(92, 172, 206) 100%);
+  color: #222;
+}
+.background .container .box-content.color-box p {
+  font-weight: 500;
+}
+.background .container .date {
+  background-color: #fff;
+  width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px 0 10px;
+}
+.background .container .date h2 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.background .container .date p {
+  font-size: 15px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.circle-txt {
+  position: absolute;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #333;
+  top: -40%;
+  animation: circle 15s linear infinite;
+  opacity: 0;
+}
+.circle-txt.circle02 {
+  color: #c8a2c8;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 0 #000;
+}
+#header.on {
+  background-color: #bebee7;
+}
+#header .container {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .container h2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .container h2:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border: 1px solid #fff;
+  z-index: 0;
+}
+#header .container h2 a {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 2;
+}
+#header .container .gnb-box {
+  display: flex;
+}
+#header #gnb ul {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#header #gnb ul li:hover .part01:before {
+  opacity: 0;
+}
+#header #gnb ul li:hover .depth01:after {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header #gnb ul li:hover .part01:after {
+  content: "자기소개";
+}
+#header #gnb ul li:hover .part02:after {
+  content: "학력 및 역량";
+}
+#header #gnb ul li:hover .part03:after {
+  content: "이전경력";
+}
+#header #gnb ul li:hover .part04:after {
+  content: "포부";
+}
+#header #gnb ul li:hover .part05:after {
+  content: "포트폴리오";
+}
+#header #gnb ul li:hover .part02:before {
+  opacity: 0;
+}
+#header #gnb ul li:hover .depth01:after {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header #gnb ul li:hover .part01:after {
+  content: "자기소개";
+}
+#header #gnb ul li:hover .part02:after {
+  content: "학력 및 역량";
+}
+#header #gnb ul li:hover .part03:after {
+  content: "이전경력";
+}
+#header #gnb ul li:hover .part04:after {
+  content: "포부";
+}
+#header #gnb ul li:hover .part05:after {
+  content: "포트폴리오";
+}
+#header #gnb ul li:hover .part03:before {
+  opacity: 0;
+}
+#header #gnb ul li:hover .depth01:after {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header #gnb ul li:hover .part01:after {
+  content: "자기소개";
+}
+#header #gnb ul li:hover .part02:after {
+  content: "학력 및 역량";
+}
+#header #gnb ul li:hover .part03:after {
+  content: "이전경력";
+}
+#header #gnb ul li:hover .part04:after {
+  content: "포부";
+}
+#header #gnb ul li:hover .part05:after {
+  content: "포트폴리오";
+}
+#header #gnb ul li:hover .part04:before {
+  opacity: 0;
+}
+#header #gnb ul li:hover .depth01:after {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header #gnb ul li:hover .part01:after {
+  content: "자기소개";
+}
+#header #gnb ul li:hover .part02:after {
+  content: "학력 및 역량";
+}
+#header #gnb ul li:hover .part03:after {
+  content: "이전경력";
+}
+#header #gnb ul li:hover .part04:after {
+  content: "포부";
+}
+#header #gnb ul li:hover .part05:after {
+  content: "포트폴리오";
+}
+#header #gnb ul li:hover .part05:before {
+  opacity: 0;
+}
+#header #gnb ul li:hover .depth01:after {
+  position: absolute;
+  width: 160px;
+  left: 50%;
+  transform: translate(-50%);
+}
+#header #gnb ul li:hover .part01:after {
+  content: "자기소개";
+}
+#header #gnb ul li:hover .part02:after {
+  content: "학력 및 역량";
+}
+#header #gnb ul li:hover .part03:after {
+  content: "이전경력";
+}
+#header #gnb ul li:hover .part04:after {
+  content: "포부";
+}
+#header #gnb ul li:hover .part05:after {
+  content: "포트폴리오";
+}
+#header #gnb ul li .depth01 {
+  display: block;
+  text-align: center;
+  width: 160px;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+}
+#header #gnb .part01:before {
+  content: "i am";
+}
+#header #gnb .part02:before {
+  content: "skilful";
+}
+#header #gnb .part03:before {
+  content: "full-time";
+}
+#header #gnb .part04:before {
+  content: "jumping";
+}
+#header #gnb .part05:before {
+  content: "Treasure";
+}
+#header .util ul {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+#header .util ul li a {
+  display: block;
+  padding-left: 25px;
+}

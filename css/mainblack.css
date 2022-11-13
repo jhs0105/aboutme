@@ -1,0 +1,190 @@
+#mainblack {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#mainblack .container {
+  height: 90%;
+  width: 95%;
+  background-color: #fff;
+}
+#mainblack .container .mbti {
+  height: 40%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+#mainblack .container .mbti h2 {
+  font-size: 120px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+#mainblack .container .mbti h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 10px;
+}
+#mainblack .container .contents {
+  height: 60%;
+}
+#mainblack .container .contents ul {
+  display: flex;
+  height: 100%;
+}
+#mainblack .container .contents ul li {
+  flex-basis: 20%;
+  height: auto;
+  flex-grow: 1;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#mainblack .container .contents ul li:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+}
+#mainblack .container .contents ul li:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #222;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+}
+#mainblack .container .contents ul li:hover .contents-box .color-box {
+  transform: skewY(-45deg);
+}
+#mainblack .container .contents ul li:hover .contents-box .txt > p {
+  opacity: 0;
+}
+#mainblack .container .contents ul li:hover .contents-box .txt .info span:after {
+  opacity: 1;
+}
+#mainblack .container .contents ul li:hover .contents-box .txt .info p {
+  opacity: 0;
+}
+#mainblack .container .contents ul li:nth-child(1) {
+  margin-left: 20px;
+}
+#mainblack .container .contents .contents-box {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#mainblack .container .contents .contents-box .color-box {
+  height: 200%;
+  width: 200%;
+  background-color: #fff;
+  transition: all 0.25s ease;
+}
+#mainblack .container .contents .contents-box .txt {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#mainblack .container .contents .contents-box .txt > p {
+  display: flex;
+  justify-content: end;
+  font-size: 35px;
+  font-weight: 700;
+  align-items: center;
+  margin: 20px 20px 0 0;
+}
+#mainblack .container .contents .contents-box .txt > p:before {
+  content: "\f141";
+  font-family: "FontAwesome";
+  background-color: inherit;
+  margin-right: 10px;
+  font-size: 30px;
+}
+#mainblack .container .contents .contents-box .txt .info {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  position: relative;
+}
+#mainblack .container .contents .contents-box .txt .info .iam {
+  color: #cf2d71;
+}
+#mainblack .container .contents .contents-box .txt .info .skilful {
+  color: #c8a2c8;
+}
+#mainblack .container .contents .contents-box .txt .info .full-time {
+  color: #5cacce;
+}
+#mainblack .container .contents .contents-box .txt .info .junior {
+  color: #00334f;
+}
+#mainblack .container .contents .contents-box .txt .info .treasure {
+  color: #9bbea9;
+}
+#mainblack .container .contents .contents-box .txt .info:before {
+  content: "";
+  height: 12px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+#mainblack .container .contents .contents-box .txt .info span {
+  box-sizing: border-box;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-weight: 900;
+  position: relative;
+}
+#mainblack .container .contents .contents-box .txt .info span:after {
+  opacity: 0;
+  width: 200px;
+  display: inline-block;
+  position: absolute;
+  font-size: 50px;
+  bottom: 5px;
+  left: 42px;
+}
+#mainblack .container .contents .contents-box .txt .info span.iam:after {
+  content: "am";
+}
+#mainblack .container .contents .contents-box .txt .info span.skilful:after {
+  content: "kilful";
+  margin-left: 8px;
+}
+#mainblack .container .contents .contents-box .txt .info span.full-time:after {
+  content: "ull-time";
+}
+#mainblack .container .contents .contents-box .txt .info span.junior:after {
+  content: "unior";
+}
+#mainblack .container .contents .contents-box .txt .info span.treasure:after {
+  content: "reasure";
+  margin-left: 32px;
+}
+#mainblack .container .contents .contents-box .txt .info p {
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.25;
+}
